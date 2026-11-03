@@ -1,0 +1,12 @@
+{
+  "name": "daekyeung-ai-workbook",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check app.js && node --check data.js && node --check server.mjs",
+    "test": "python3 tests/smoke.py"
+  }
+}

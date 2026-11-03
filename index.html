@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#184d44"><meta name="description" content="대경대학교 교원을 위한 AI 시대의 수업과 평가 워크북. 과제 설계부터 루브릭, 과제 안내문과 강의계획서 PDF까지.">
+<title>수업을 다시 쓰다 · 대경대학교 AI 워크북</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 이동</a>
+<aside class="sidebar" aria-label="워크북 탐색">
+<a class="brand" href="#step-0"><span class="brand-icon">D<span>✳</span></span><span>대경대학교<small>교원 AI 교육 워크북</small></span></a>
+<div class="nav-caption">MY TEACHING WORKBOOK</div>
+<nav id="step-nav" aria-label="작성 단계"></nav>
+<div class="sidebar-bottom"><div class="completion"><span>나의 작성 현황</span><b id="progress-text">0 / 8</b></div><div class="progress-track"><i id="progress-bar"></i></div><p>한 과목, 한 과제로 끝까지.<br>오늘의 생각이 다음 수업이 됩니다.</p><span class="mindcanvas">마인드캔버스 <span>×</span> 대경대학교</span></div>
+</aside>
+<div class="app-shell">
+<header class="topbar"><span class="breadcrumb">2026 교원 AI 교육 <span>/</span> 나의 수업 설계</span><div class="header-actions"><span id="save-status" role="status">이 브라우저에 자동 저장</span><button class="button small" id="export-open">↓ PDF 저장</button></div></header>
+<main id="main" tabindex="-1"></main>
+<footer class="page-footer"><span>AI 시대의 수업과 평가</span><span>내가 판단하고, AI와 함께 다듬는 수업.</span></footer>
+</div>
+<dialog id="expand-dialog" aria-labelledby="expand-title"><div class="dialog-head"><div><span class="eyebrow">FOCUS MODE</span><h2 id="expand-title">크게 작성하기</h2></div><button type="button" class="icon-button" data-close="expand-dialog" aria-label="확대 창 닫기">✕</button></div><textarea id="expanded-input" aria-labelledby="expand-title"></textarea><div class="dialog-foot"><span>입력 내용은 원래 칸에도 함께 반영됩니다.</span><button class="button primary" data-close="expand-dialog">작성 완료</button></div></dialog>
+<dialog id="sample-dialog" aria-labelledby="sample-title"><div class="dialog-head"><div><span class="eyebrow">START WITH AN EXAMPLE</span><h2 id="sample-title">우리 전공에 가까운 예시로 시작</h2></div><button class="icon-button" data-close="sample-dialog" aria-label="샘플 창 닫기">✕</button></div><p class="muted">수업 설계를 연습하기 위한 예시입니다. 실제 학과명과 운영 기준에 맞게 고쳐 주세요. 현재 작성 내용은 보관되어 ‘샘플 취소’로 복원할 수 있습니다.</p><div id="sample-options"></div></dialog>
+<dialog id="confirm-dialog" aria-labelledby="confirm-title"><div class="dialog-head"><h2 id="confirm-title">새 워크북을 시작할까요?</h2><button class="icon-button" data-close="confirm-dialog" aria-label="닫기">✕</button></div><p>현재 작성 내용과 샘플 적용 전 기록이 삭제됩니다. 보관하려면 먼저 JSON 백업 또는 PDF로 저장해 주세요.</p><div class="dialog-foot"><button class="button" data-close="confirm-dialog">계속 작성</button><button class="button danger" id="reset-confirm">모두 지우고 새로 작성</button></div></dialog>
+<dialog id="export-dialog" aria-labelledby="export-title"><div class="dialog-head"><div><span class="eyebrow">YOUR WORK, READY TO SHARE</span><h2 id="export-title">완성한 내용을 PDF로</h2></div><button class="icon-button" data-close="export-dialog" aria-label="닫기">✕</button></div><p class="muted">브라우저 인쇄 창에서 대상을 ‘PDF로 저장’으로 선택하세요. 한글을 검색·복사할 수 있는 문서로 저장됩니다.</p><div id="export-warnings"></div><label class="field">저장할 범위<select id="print-range"><option value="all">전체 워크북 + 완성 문서 + 기록 양식</option><option value="assignment">학생 배포용 과제 안내문 + 붙임 1·2</option><option value="syllabus">강의계획서 반영분</option></select></label><div class="dialog-foot"><button class="button" id="backup">JSON 백업</button><button class="button primary" id="print-button">인쇄 창 열기 · PDF 저장 ↗</button></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div><div id="print-root"></div>
+<script type="module" src="./app.js"></script>
+</body></html>
