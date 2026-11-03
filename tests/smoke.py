@@ -75,6 +75,7 @@ with sync_playwright() as p:
  page.pdf(path=str(OUT/'workbook.pdf'),format='A4',print_background=True,prefer_css_page_size=True)
  extracted=subprocess.check_output(['pdftotext',str(OUT/'workbook.pdf'),'-'],text=True)
  assert '붙임 2' in extracted and '직접 편집한 과제 목표' in extracted
+ assert 'p.8 완성 점검과 다음 단계' in extracted
  # Separate export UI builds the selected document only.
  page.emulate_media(media='screen')
  page.locator('#export-open').click();page.locator('#print-range').select_option('assignment')
