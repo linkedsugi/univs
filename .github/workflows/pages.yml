@@ -24,8 +24,9 @@ jobs:
       - run: npm run check
       - name: Prepare static site
         run: |
-          mkdir -p _site
+          mkdir -p _site/tk1104
           cp index.html app.js data.js style.css favicon.svg _site/
+          cp index.html app.js data.js style.css favicon.svg _site/tk1104/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
