@@ -23,7 +23,7 @@ jobs:
           node-version: '24'
       - run: npm run check
       - name: Check Kyungbuk workbook
-        run: node --check kbc1105/app.js && node --check kbc1105/data.js && node --check kbc1105/core.js && node --check kbc1105/materials.js
+        run: node --check kbc1105/app.js && node --check kbc1105/data.js && node --check kbc1105/core.js && node --check kbc1105/materials.js && node --check kbc1105/videos.js && node --check kbc1105/lesson-guides.js
       - name: Prepare static site
         run: |
           mkdir -p _site/tk1104
@@ -54,6 +54,25 @@ jobs:
           cp kbc1105/references/claude-code-github-guide.pdf _site/kbc1105/references/claude-code-github-guide.pdf
           cp kbc1105/references/lecture-day-1.pdf _site/kbc1105/references/lecture-day-1.pdf
           cp kbc1105/references/lecture-day-2.pdf _site/kbc1105/references/lecture-day-2.pdf
+          mkdir -p _site/kbc1105/videos
+          cp kbc1105/videos.js _site/kbc1105/videos.js
+          cp kbc1105/lesson-guides.js _site/kbc1105/lesson-guides.js
+          cp kbc1105/videos/lm03.jpg _site/kbc1105/videos/lm03.jpg
+          cp kbc1105/videos/mm02.jpg _site/kbc1105/videos/mm02.jpg
+          cp kbc1105/videos/ai-evaluation.jpg _site/kbc1105/videos/ai-evaluation.jpg
+          cp kbc1105/videos/lm04.jpg _site/kbc1105/videos/lm04.jpg
+          cp kbc1105/videos/lm02.jpg _site/kbc1105/videos/lm02.jpg
+          cp kbc1105/videos/mm01.jpg _site/kbc1105/videos/mm01.jpg
+          cp kbc1105/videos/lm01.jpg _site/kbc1105/videos/lm01.jpg
+          cp kbc1105/videos/lm01.mp4 _site/kbc1105/videos/lm01.mp4
+          cp kbc1105/videos/lm02.mp4 _site/kbc1105/videos/lm02.mp4
+          cp kbc1105/videos/lm03.mp4 _site/kbc1105/videos/lm03.mp4
+          cp kbc1105/videos/lm04.mp4 _site/kbc1105/videos/lm04.mp4
+          cp kbc1105/videos/mm01.mp4 _site/kbc1105/videos/mm01.mp4
+          cp kbc1105/videos/mm02.mp4 _site/kbc1105/videos/mm02.mp4
+          cp kbc1105/videos/ai-evaluation.mp4 _site/kbc1105/videos/ai-evaluation.mp4
+          mkdir -p _site/kbc1105/assets
+          cp kbc1105/assets/mindcanvas-logo-horizontal.svg _site/kbc1105/assets/mindcanvas-logo-horizontal.svg
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

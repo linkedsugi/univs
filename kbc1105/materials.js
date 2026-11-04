@@ -199,13 +199,13 @@ export const materials = [
   }
 ];
 export const referenceGuide = {
-  "title": "Claude Code × GitHub 사용 가이드",
-  "subtitle": "Claude에게 맡기는 GitHub 프로젝트 관리",
-  "description": "GitHub 연결, 변경 기록, 원격 개발, GitHub Pages 배포까지 자연어로 요청하는 입문 가이드입니다. 워크북 본문과 별개인 참고자료입니다. PDF 내부의 일부 추가자료 링크는 별도 접근 권한이 필요할 수 있습니다.",
-  "pages": 18,
-  "bytes": 1914163,
-  "href": "./references/claude-code-github-guide.pdf",
-  "filename": "GitHub_ClaudeCode_NoCLI_A4_Portrait_20261104.pdf"
+  "title": "Claude Code · GitHub · Vercel 실습 가이드",
+  "subtitle": "가입부터 웹사이트 개발·소스 관리·배포까지",
+  "description": "자연어로 웹사이트를 만들고 GitHub로 소스를 관리하며 Vercel에 배포·자동 재배포하는 과정을 안내합니다. 요청문 20개, 화면 자료 10종과 Railway 선택 안내를 담은 별도 참고자료입니다. 서비스 요금·플랜·메뉴는 변경될 수 있습니다.",
+  "pages": 26,
+  "bytes": 2113681,
+  "href": "./references/claude-code-github-guide.pdf?v=20261104-guide3",
+  "filename": "Claude_Code_GitHub_Vercel_A4_NoCLI_20261104.pdf"
 };
 
 export const lectureSlides = [
