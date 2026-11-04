@@ -22,12 +22,16 @@ jobs:
         with:
           node-version: '24'
       - run: npm run check
+      - name: Check Kyungbuk workbook
+        run: node --check kbc1105/app.js && node --check kbc1105/data.js && node --check kbc1105/core.js
       - name: Prepare static site
         run: |
           mkdir -p _site/tk1104
           cp index.html app.js data.js style.css favicon.svg _site/
           cp index.html app.js data.js style.css favicon.svg _site/tk1104/
           cp tk1104/style.css _site/tk1104/style.css
+          mkdir -p _site/kbc1105
+          cp kbc1105/index.html kbc1105/app.js kbc1105/data.js kbc1105/style.css kbc1105/core.js _site/kbc1105/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
