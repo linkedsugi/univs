@@ -23,7 +23,7 @@ jobs:
           node-version: '24'
       - run: npm run check
       - name: Check Kyungbuk workbook
-        run: node --check kbc1105/app.js && node --check kbc1105/data.js && node --check kbc1105/core.js
+        run: node --check kbc1105/app.js && node --check kbc1105/data.js && node --check kbc1105/core.js && node --check kbc1105/materials.js
       - name: Prepare static site
         run: |
           mkdir -p _site/tk1104
@@ -31,7 +31,27 @@ jobs:
           cp index.html app.js data.js style.css favicon.svg _site/tk1104/
           cp tk1104/style.css _site/tk1104/style.css
           mkdir -p _site/kbc1105
-          cp kbc1105/index.html kbc1105/app.js kbc1105/data.js kbc1105/style.css kbc1105/core.js _site/kbc1105/
+          cp kbc1105/index.html kbc1105/app.js kbc1105/data.js kbc1105/style.css kbc1105/core.js kbc1105/materials.js _site/kbc1105/
+          mkdir -p _site/kbc1105/materials _site/kbc1105/references
+          cp kbc1105/materials/pt-questions-20.txt _site/kbc1105/materials/pt-questions-20.txt
+          cp kbc1105/materials/electrical-wiring.png _site/kbc1105/materials/electrical-wiring.png
+          cp kbc1105/materials/child-observations-12.txt _site/kbc1105/materials/child-observations-12.txt
+          cp kbc1105/materials/rail-maintenance.csv _site/kbc1105/materials/rail-maintenance.csv
+          cp kbc1105/materials/rag-questions-20.txt _site/kbc1105/materials/rag-questions-20.txt
+          cp kbc1105/materials/lab-guidelines-10.md _site/kbc1105/materials/lab-guidelines-10.md
+          cp kbc1105/materials/rag-guideline-01.pdf _site/kbc1105/materials/rag-guideline-01.pdf
+          cp kbc1105/materials/rag-guideline-02.pdf _site/kbc1105/materials/rag-guideline-02.pdf
+          cp kbc1105/materials/rag-guideline-03.pdf _site/kbc1105/materials/rag-guideline-03.pdf
+          cp kbc1105/materials/rag-guideline-04.pdf _site/kbc1105/materials/rag-guideline-04.pdf
+          cp kbc1105/materials/rag-guideline-05.pdf _site/kbc1105/materials/rag-guideline-05.pdf
+          cp kbc1105/materials/rag-guideline-06.pdf _site/kbc1105/materials/rag-guideline-06.pdf
+          cp kbc1105/materials/rag-guideline-07.pdf _site/kbc1105/materials/rag-guideline-07.pdf
+          cp kbc1105/materials/rag-guideline-08.pdf _site/kbc1105/materials/rag-guideline-08.pdf
+          cp kbc1105/materials/rag-guideline-09.pdf _site/kbc1105/materials/rag-guideline-09.pdf
+          cp kbc1105/materials/rag-guideline-10.pdf _site/kbc1105/materials/rag-guideline-10.pdf
+          cp kbc1105/materials/student-reflections-6.txt _site/kbc1105/materials/student-reflections-6.txt
+          cp kbc1105/materials/kbc-practice-materials.zip _site/kbc1105/materials/kbc-practice-materials.zip
+          cp kbc1105/references/claude-code-github-guide.pdf _site/kbc1105/references/claude-code-github-guide.pdf
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
