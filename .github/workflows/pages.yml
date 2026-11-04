@@ -52,6 +52,8 @@ jobs:
           cp kbc1105/materials/student-reflections-6.txt _site/kbc1105/materials/student-reflections-6.txt
           cp kbc1105/materials/kbc-practice-materials.zip _site/kbc1105/materials/kbc-practice-materials.zip
           cp kbc1105/references/claude-code-github-guide.pdf _site/kbc1105/references/claude-code-github-guide.pdf
+          cp kbc1105/references/lecture-day-1.pdf _site/kbc1105/references/lecture-day-1.pdf
+          cp kbc1105/references/lecture-day-2.pdf _site/kbc1105/references/lecture-day-2.pdf
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

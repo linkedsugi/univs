@@ -207,3 +207,26 @@ export const referenceGuide = {
   "href": "./references/claude-code-github-guide.pdf",
   "filename": "GitHub_ClaudeCode_NoCLI_A4_Portrait_20261104.pdf"
 };
+
+export const lectureSlides = [
+  {
+    "day": 1,
+    "title": "1일차 · 원리",
+    "description": "내 전공 데이터로 AI의 안쪽을 확인합니다",
+    "pages": 61,
+    "bytes": 8405692,
+    "href": "./references/lecture-day-1.pdf",
+    "filename": "경북전문대_교원심화A_1일차_원리_슬라이드_20261026.pdf",
+    "note": "이미지형 PDF 원본으로 텍스트 검색·복사가 제한될 수 있습니다."
+  },
+  {
+    "day": 2,
+    "title": "2일차 · 적용",
+    "description": "우리 학과 자료로 AI의 빈칸을 채웁니다",
+    "pages": 47,
+    "bytes": 6368121,
+    "href": "./references/lecture-day-2.pdf",
+    "filename": "경북전문대_교원심화A_2일차_적용_슬라이드_20261026.pdf",
+    "note": "이미지형 PDF 원본으로 텍스트 검색·복사가 제한될 수 있습니다."
+  }
+];
