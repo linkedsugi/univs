@@ -73,6 +73,8 @@ jobs:
           cp kbc1105/videos/ai-evaluation.mp4 _site/kbc1105/videos/ai-evaluation.mp4
           mkdir -p _site/kbc1105/assets
           cp kbc1105/assets/mindcanvas-logo-horizontal.svg _site/kbc1105/assets/mindcanvas-logo-horizontal.svg
+          cp kbc1105/videos/dl01.mp4 _site/kbc1105/videos/dl01.mp4
+          cp kbc1105/videos/dl01.jpg _site/kbc1105/videos/dl01.jpg
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

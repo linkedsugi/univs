@@ -48,7 +48,7 @@ export const videoReferences = [
       6,
       8
     ],
-    "durationSeconds": 172.0,
+    "durationSeconds": 172,
     "bytes": 12389129,
     "href": "./videos/lm04.mp4",
     "poster": "./videos/lm04.jpg",
@@ -93,5 +93,19 @@ export const videoReferences = [
     "href": "./videos/ai-evaluation.mp4",
     "poster": "./videos/ai-evaluation.jpg",
     "filename": "AI_학습추론평가_정밀도재현율.mp4"
+  },
+  {
+    "id": "dl01",
+    "title": "딥러닝·블랙박스·오픈웨이트",
+    "description": "뉴런·가중치와 깊은 신경망을 살펴봅니다. 모델이 블랙박스로 불리는 이유와 오픈웨이트의 공개 범위·라이선스를 구분합니다.",
+    "pages": [
+      6,
+      9
+    ],
+    "durationSeconds": 160,
+    "bytes": 25525978,
+    "href": "./videos/dl01.mp4",
+    "poster": "./videos/dl01.jpg",
+    "filename": "DL01_칠판_딥러닝_블랙박스_오픈웨이트.mp4"
   }
 ];
