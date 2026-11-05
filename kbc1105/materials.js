@@ -230,3 +230,42 @@ export const lectureSlides = [
     "note": "이미지형 PDF 원본으로 텍스트 검색·복사가 제한될 수 있습니다."
   }
 ];
+
+export const day2Downloads = [
+  {
+    "filename": "경북전문대_교원심화_2일차_워크북_20261106.pdf",
+    "href": "./references/day2-workbook-20261106.pdf",
+    "title": "2일차 워크북",
+    "description": "업무 지도부터 실습 기록·검증표·적용 설계와 계정 반납까지 기록하는 워크북입니다.",
+    "pages": 9,
+    "bytes": 542194,
+    "sha256": "af645638c3c127b5508950c27e2515820ae8bd680a190ea2d6f29c2b380261dd"
+  },
+  {
+    "filename": "경북전문대_교원심화_2일정리_참고자료_20261106.pdf",
+    "href": "./references/day2-review-20261106.pdf",
+    "title": "이틀 정리 참고자료",
+    "description": "핵심 개념, 요청문, 실습 절차와 수업 후 업무 적용 방법을 정리한 자료입니다.",
+    "pages": 4,
+    "bytes": 505110,
+    "sha256": "408e51765b5c852d6c5d0eeabb1fe0bf4cbedbbf6d056debaf1b39d13216be6b"
+  },
+  {
+    "filename": "경북전문대_교원심화_2일차_에이전트실습가이드_20261106.pdf",
+    "href": "./references/day2-agent-guide-20261106.pdf",
+    "title": "에이전트 실습 가이드",
+    "description": "과제물 확인 에이전트를 만들고 검증하는 단계별 요청문과 실습 안내입니다.",
+    "pages": 3,
+    "bytes": 473390,
+    "sha256": "a2ea946d7d7abf99017f95bfc64971978540bfe91a967c5065dda9a6a5a625ce"
+  },
+  {
+    "filename": "경북전문대_교원심화_2일차_진행안내_교수님공유용_20261106.pdf",
+    "href": "./references/day2-session-guide-20261106.pdf",
+    "title": "2일차 진행안내 · 교수님 공유용",
+    "description": "오전 선택 트랙과 오후 실습, 발표·제출 일정 및 계정 반납 안내입니다.",
+    "pages": 3,
+    "bytes": 492293,
+    "sha256": "7243a1796d01263f78ab0c8ff9ee1b6b2a3d9819a521fde734553215a3bd88c1"
+  }
+];

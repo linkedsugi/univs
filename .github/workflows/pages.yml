@@ -54,6 +54,10 @@ jobs:
           cp kbc1105/references/claude-code-github-guide.pdf _site/kbc1105/references/claude-code-github-guide.pdf
           cp kbc1105/references/lecture-day-1.pdf _site/kbc1105/references/lecture-day-1.pdf
           cp kbc1105/references/lecture-day-2.pdf _site/kbc1105/references/lecture-day-2.pdf
+          cp kbc1105/references/day2-workbook-20261106.pdf _site/kbc1105/references/day2-workbook-20261106.pdf
+          cp kbc1105/references/day2-review-20261106.pdf _site/kbc1105/references/day2-review-20261106.pdf
+          cp kbc1105/references/day2-agent-guide-20261106.pdf _site/kbc1105/references/day2-agent-guide-20261106.pdf
+          cp kbc1105/references/day2-session-guide-20261106.pdf _site/kbc1105/references/day2-session-guide-20261106.pdf
           mkdir -p _site/kbc1105/videos
           cp kbc1105/videos.js _site/kbc1105/videos.js
           cp kbc1105/lesson-guides.js _site/kbc1105/lesson-guides.js
