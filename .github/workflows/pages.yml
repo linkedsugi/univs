@@ -58,6 +58,7 @@ jobs:
           cp kbc1105/references/day2-review-20261106.pdf _site/kbc1105/references/day2-review-20261106.pdf
           cp kbc1105/references/day2-agent-guide-20261106.pdf _site/kbc1105/references/day2-agent-guide-20261106.pdf
           cp kbc1105/references/day2-session-guide-20261106.pdf _site/kbc1105/references/day2-session-guide-20261106.pdf
+          cp kbc1105/references/api-and-api-key-guide-20261106.pdf _site/kbc1105/references/api-and-api-key-guide-20261106.pdf
           mkdir -p _site/kbc1105/videos
           cp kbc1105/videos.js _site/kbc1105/videos.js
           cp kbc1105/lesson-guides.js _site/kbc1105/lesson-guides.js

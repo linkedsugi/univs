@@ -269,3 +269,15 @@ export const day2Downloads = [
     "sha256": "7243a1796d01263f78ab0c8ff9ee1b6b2a3d9819a521fde734553215a3bd88c1"
   }
 ];
+
+export const apiReferenceGuide = {
+  "title": "API와 API Key 이해하기",
+  "subtitle": "바이브코딩 교수 연수 · API 기초 (30분)",
+  "description": "API 요청·응답, API Key 발급과 안전한 보관, 모델·요금 비교, 토큰 비용 계산과 수업용 앱 예시를 담은 참고자료입니다.",
+  "pages": 15,
+  "bytes": 3847008,
+  "href": "./references/api-and-api-key-guide-20261106.pdf",
+  "filename": "API와 API Key 이해하기 — 바이브코딩 교수 연수.pdf",
+  "note": "모델·요금·서비스 화면은 원문 작성일(2026.11.06) 기준이며 변경될 수 있습니다. 실제 사용 전 각 서비스의 최신 안내를 확인하세요.",
+  "sha256": "10112045da68ae6a4f8b42f33bdb56d8540513331deba7703b74da19178694ae"
+};
