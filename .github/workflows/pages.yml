@@ -79,6 +79,8 @@ jobs:
           cp kbc1105/assets/mindcanvas-logo-horizontal.svg _site/kbc1105/assets/mindcanvas-logo-horizontal.svg
           cp kbc1105/videos/dl01.mp4 _site/kbc1105/videos/dl01.mp4
           cp kbc1105/videos/dl01.jpg _site/kbc1105/videos/dl01.jpg
+          cp kbc1105/videos/llm-api-key.mp4 _site/kbc1105/videos/llm-api-key.mp4
+          cp kbc1105/videos/llm-api-key.jpg _site/kbc1105/videos/llm-api-key.jpg
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

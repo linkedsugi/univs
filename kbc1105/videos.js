@@ -107,5 +107,18 @@ export const videoReferences = [
     "href": "./videos/dl01.mp4",
     "poster": "./videos/dl01.jpg",
     "filename": "DL01_칠판_딥러닝_블랙박스_오픈웨이트.mp4"
+  },
+  {
+    "id": "llm-api-key",
+    "title": "LLM API와 API 키",
+    "description": "API의 연결 방식, API 키의 역할, 채팅 구독과 API 비용의 차이, 키를 안전하게 보관하는 원칙을 설명합니다. 화면 자막으로 보는 무음 영상입니다.",
+    "pages": [
+      9
+    ],
+    "durationSeconds": 144,
+    "bytes": 4969418,
+    "href": "./videos/llm-api-key.mp4",
+    "poster": "./videos/llm-api-key.jpg",
+    "filename": "LLM_API_키_설명_애니메이션.mp4"
   }
 ];
